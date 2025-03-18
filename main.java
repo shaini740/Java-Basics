@@ -13,6 +13,12 @@ public class main {
         java.printAllNumbersInArray();
         java.printAllEvenNumbersInList();
         java.printAllOddNumbersInList();
+        java.printAllCourses();
+        java.printCourse();
+        java.printCourseWith5Characters();
+        java.printSquaresofEvenNumber();
+        java.printCubesOfOdd();
+        java.printsNumberOfCharacters();
 
     }
 }
