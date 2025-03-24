@@ -6,6 +6,8 @@ public class main {
         javaBasics.printSomething();
         javaBasics.evenOrOdd();
         javaBasics.swap_numbers();
+        javaBasics.leapYear();
+        javaBasics.largestOfThreeNumbers();
 
 
 
