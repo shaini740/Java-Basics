@@ -8,6 +8,10 @@ public class main {
         javaBasics.swap_numbers();
         javaBasics.leapYear();
         javaBasics.largestOfThreeNumbers();
+        javaBasics.addComplexNumbers();
+        javaBasics.simpleInterest();
+        javaBasics.perimeterRectangle();
+        javaBasics.lcmAndHcf();
 
 
 
