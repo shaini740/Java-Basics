@@ -12,6 +12,8 @@ public class main {
         javaBasics.simpleInterest();
         javaBasics.perimeterRectangle();
         javaBasics.lcmAndHcf();
+        javaBasics.Factorial();
+        javaBasics.fibonacci();
 
 
 

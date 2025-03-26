@@ -114,4 +114,30 @@ public class JavaBasics {
         System.out.println("The LCM is "+(number1*number2)/hcf);
         System.out.println("The HCF is "+hcf);
     }
+
+    public void Factorial(){
+        System.out.println("Enter the Number " );
+        int number = input.nextInt();
+        int fact=1;
+        for(int i=1;i<=number;i++){
+            fact = fact*i;
+        }
+        System.out.println("The Factorial of the Number is "+fact);
+    }
+
+    public void fibonacci(){
+        System.out.println("Enter the Number " );
+        int number = input.nextInt();
+        int fact1 = 0;
+        int fact2 = 1;
+        int next;
+        System.out.println("The Fibonacci Series is  : ");
+        System.out.print(fact1+" "+fact2+" ");
+        for(int i=2;i<number;i++){
+            next = fact1+fact2;
+            System.out.print(next+" ");
+            fact1 =fact2;
+            fact2 = next;
+        }
+    }
 }
