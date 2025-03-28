@@ -140,4 +140,22 @@ public class JavaBasics {
             fact2 = next;
         }
     }
+
+    public void primNUmbers(){
+        System.out.println("Enter the Limit : ");
+        int limit = input.nextInt();
+        System.out.println("The Prime Number till "+limit+" is  : ");
+        for (int num=2;num<limit;num++){
+            boolean isprime = true;
+            for(int i=2;i<num;i++){
+                if(num%i==0){
+                    isprime = false;
+                    break;
+                }
+            }
+            if(isprime){
+                System.out.print(num+" ");
+            }
+        }
+    }
 }

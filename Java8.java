@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -116,12 +117,27 @@ public class Java8 {
     }
 
     //Prints the Number of Characters in List
-    public void printsNumberOfCharacters(){
+    public void printsNumberOfCharacters() {
         List<String> list = readListOfString();
         System.out.println("Numbers of Characters in Courses : ");
         list.stream()
-                .map(courseName -> courseName+" : "+courseName.length())
+                .map(courseName -> courseName + " : " + courseName.length())
+                .forEach(System.out::println);
+    }
+    public void printDistinctValuesInList(){
+        List<Integer> list = readListofNumbers();
+        System.out.println("The Distinct Values are : ");
+        list.stream()
+                .distinct()
                 .forEach(System.out::println);
     }
 
+    public void printDistinctValuesInListAscending(){
+        List<Integer> list = readListofNumbers();
+        System.out.println("The Distinct Values in List in Ascending Order : ");
+        list.stream()
+                .distinct()
+                .sorted(Comparator.reverseOrder())
+                .forEach(System.out::println);
+    }
 }
